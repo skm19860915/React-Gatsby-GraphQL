@@ -1,95 +1,119 @@
-import React, { useMemo, useContext } from "react";
-import loadable from '@loadable/component'
-import { ScreenContext, OpenFormContext } from '@components/Layout'
+import React, { useState, useEffect } from "react"
+import { Row } from "reactstrap"
+import { MdMenu } from "react-icons/md"
+import { StaticQuery, graphql } from "gatsby"
+import Menu from "../menu"
+import LeaseModal from "../leaseModal"
+import "./styles.scss"
+import ReactModal from "react-modal"
+import TourModal from "../tourModal/modal"
 
-type props = {
-  backgroundTrigger?: string;
-  startingTextColor?: string;
-  triggerOffset?: string;
-  startingBackgroundColor?: string
-  startingButtonColor?: string
-  startingButtonBorderColor?: string
-};
+interface Props {
+  siteTitle: string
+}
+//
+const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleLease, setToggleLease] = useState(false)
+  const [openTourModal, setOpenTourModal] = useState(false)
 
-const Header: React.FC<props> = ({
-  backgroundTrigger,
-  startingTextColor,
-  startingBackgroundColor,
-  startingButtonColor,
-  startingButtonBorderColor,
-  triggerOffset,
-}) => {
-  const screen = useContext(ScreenContext)
-  const openForm = useContext(OpenFormContext)
-  const Component = (screen.desktop || screen.fullWidth) ? loadable(() => import("./Desktop")) : loadable(() => import("./Tablet"))
+  const onClickMenu = () => {
+    setToggleMenu(!toggleMenu)
+  }
+  const onClickLease = () => {
+    setToggleLease(!toggleLease)
+  }
+  useEffect(() => {
+    ReactModal.setAppElement("#header")
+    return () => {}
+  }, [])
 
-  const DATA = useMemo(() => [
-    {
-      name: "Solutions",
-      subLinks: [
-        {
-          name: "mIQroAware™",
-          slug: "/miqroaware/",
-          text: "Advanced pipeline monitoring system blending Internet of Things (IoT), sensor, Artificial Intelligence (AI), and Analytics technology to monitor and report major risks to pipeline health.",
-        },
-        {
-          name: "Future Innovations",
-          slug: "/future-innovations/",
-          text: "We are passionately working to launch our future initiatives to transform oil and gas. We’re excited to share more with you soon.",
-        },
-      ],
-    },
-    {
-      name: "Company",
-      subLinks: [
-        {
-          name: "About Us",
-          slug: "/about/",
-          text: "Learn more about who mIQrotech is, what we stand for and how we are changing the future.",
-        },
-        // {
-        //   name: "Careers",
-        //   slug: "https://www.linkedin.com/company/miqrotech/jobs/",
-        //   text: "See latest job openings and new career opportunities with mIQrotech.",
-        // },
-        {
-          name: "News",
-          slug: "/blog/",
-          text: "Read more about the latest news and articles published by mIQrotech and other partners.",
-        },
-      ],
-    },
-    // {
-    //   name: "Support",
-    //   subLinks: [
-    //     {
-    //       name: "Help Center",
-    //       slug: "/help-center",
-    //       text: "Need help? We have plenty of resources to help you with any questions you have about our product.",
-    //     },
-    //     // {
-    //     //   name: "Investor Login",
-    //     //   slug: "/investor-login",
-    //     //   text: "Investors login into your portal here.",
-    //     // },
-    //   ],
-    // },
-  ], [])
+  return (
+    <StaticQuery
+      query={graphql`
+        query headerQuery {
+          craft {
+            entry(
+              site: "starMetalsResidential"
+              section: "realEstateProjects"
+              slug: "star-metals-residential"
+            ) {
+              id
+              ... on Craft_realEstateProjects_realEstateProjects_Entry {
+                location {
+                  address
+                  city
+                  state
+                  zipcode
+                }
+                contractor {
+                  title
+                }
+                instagramPage
+                mainPhoneNumberForProperty
+                facebookPage
+                websiteEmail
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <div className="header" id="header">
+          <a className="logo" href="https://starmetalsresidences.com" />
+          <div className="right-section">
+            <div
+              className="header-number"
+              // onClick={() => setOpenTourModal(true)}
+            >
+              {data.craft.entry.mainPhoneNumberForProperty}
+            </div>
+            {/* <div
+              className="lease-button"
+              onClick={() => {
+                onClickLease()
+              }}
+            >
+              <span>LEASE NOW</span>
+            </div> */}
+            <a className="lease-button" href="/floorplan">
+              <span>VIEW FLOORPLANS</span>
+            </a>
 
-  if (Component) {
-    return (
-      <Component
-        backgroundTrigger={backgroundTrigger}
-        startingBackgroundColor={startingBackgroundColor}
-        triggerOffset={triggerOffset}
-        openForm={openForm}
-        data={DATA}
-        startingTextColor={startingTextColor}
-        startingButtonColor={startingButtonColor}
-        startingButtonBorderColor={startingButtonBorderColor}
-      />
-    );
-  } else return null;
-};
+            <div
+              className={`hamburger-button ${toggleMenu ? "active" : ""}`}
+              onClick={() => {
+                onClickMenu()
+              }}
+            >
+              <MdMenu color="white" size={40}></MdMenu>
+            </div>
+          </div>
+          <Menu
+            open={toggleMenu}
+            onClose={() => onClickMenu()}
+            onLease={() => {
+              onClickMenu()
+              onClickLease()
+            }}
+            phone={data.craft.entry.mainPhoneNumberForProperty}
+            address1={data.craft.entry.location[0].address}
+            address2={`${data.craft.entry.location[0].city}. ${data.craft.entry.location[0].state} ${data.craft.entry.location[0].zipcode}`}
+            facebook={data.craft.entry.facebookPage}
+            instagram={data.craft.entry.instagramPage}
+          ></Menu>
+          <LeaseModal
+            open={toggleLease}
+            onClose={() => onClickLease()}
+          ></LeaseModal>
+          <TourModal
+            open={openTourModal}
+            onClose={() => setOpenTourModal(false)}
+          />
+        </div>
+      )}
+    />
+  )
+}
 
-export default Header;
+export default Header

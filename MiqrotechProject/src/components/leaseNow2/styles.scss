@@ -1,0 +1,276 @@
+.lease-now-2 {
+  &-heading {
+    font-family: "Overpass";
+    font-size: 50px;
+    text-align: center;
+    color: #443635;
+    font-weight: bold;
+    margin-bottom: 45px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 30px;
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-content {
+    margin: 0 77px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin: 0 25px;
+    }
+
+  }
+
+  &-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #231f20;
+    color: #231f20;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    width: calc(25% - 15px);
+    font-size: 20px;
+    font-family: 'Overpass';
+    letter-spacing: 2px;
+
+    // &:hover {
+    //   color: #946a4d;
+    //   background-color: white;
+    //   opacity: 0.6;
+    //   transition: all 200ms ease-in-out;
+    //   text-decoration: none;
+    // }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+
+
+    &.active {
+      color: white;
+      background-color: #946a4d;
+      border: 1px solid #946a4d;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 10px;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 320px) {
+      height: 30px;
+      line-height: 30px;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      bottom: 10px;
+    }
+  }
+
+  &-result {
+    font-size: 16px;
+    font-family: "Overpass";
+    color: #636569;
+    margin-bottom: 18px;
+    margin-top: 10px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+      margin-bottom: 10px;
+      margin-top: 7px;
+    }
+  }
+
+  &-plan {
+    font-size: 20px;
+    font-family: "Overpass";
+    color: #636569;
+    padding: 0 77px;
+    letter-spacing: 1px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+      line-height: 14px;
+      padding: 0 30px;
+    }
+  }
+
+  &-pre-bottom {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+    margin-left: calc(50% - 150px);
+    font-weight: bold;
+
+    @media screen and (max-width: 1024px) {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    margin-left: 77px;
+    margin-right: 77px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin: 0 25px;
+      font-size: 12px;
+      font-family: 'Overpass';
+    }
+  }
+
+  &-back {
+    color: #636569;
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &-next {
+    color: #636569;
+    cursor: pointer;
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+
+  &-view-result {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #946a4d;
+    text-transform: uppercase;
+    line-height: 45px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR';
+    margin-left: 40px;
+
+    &:hover {
+      text-decoration: underline;
+      color: #946a4d;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 25px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+      line-height: 25px;
+      margin-left: 10px;
+    }
+  }
+
+  &-start-over {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #946a4d;
+    text-transform: uppercase;
+    line-height: 45px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR';
+    padding-right: 40px;
+
+    border-right: 1px solid #636569;
+
+    &:hover {
+      text-decoration: underline;
+      color: #946a4d;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 25px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+      line-height: 25px;
+      padding-right: 10px;
+    }
+  }
+}

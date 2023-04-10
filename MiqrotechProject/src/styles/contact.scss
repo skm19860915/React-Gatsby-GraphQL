@@ -1,0 +1,8 @@
+.contact-tooltip {
+    font-family: 'Overpass';
+    font-size: 20px;
+    @media screen and (max-width: 767px) {
+        font-size: 10px;
+        line-height: normal;
+    }
+}

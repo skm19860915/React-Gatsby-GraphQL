@@ -1,0 +1,74 @@
+.nice-dates-day:before {
+  background-color: #946a4d;
+  border-color: #946a4d;
+}
+
+.nice-dates-day:after {
+  border-color: #946a4d;
+}
+
+.nice-dates-day {
+}
+
+.datepicker-input {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  font-family: "Overpass";
+  color: rgb(35, 31, 32);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+}
+
+.datepicker-custom-input {
+  height: 30px;
+  line-height: 50px;
+  font-size: 14px;
+  font-family: "Overpass";
+  color: rgb(35, 31, 32);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #707070;
+  width: 150px;
+  position: absolute;
+  opacity: 0;
+}
+
+.datepicker-input-focused {
+}
+
+.nice-dates-popover {
+  max-width: 280px;
+  @media screen and (max-width: 767px) {
+    left: calc(50% - 140px);
+  }
+}
+
+.time-select-view-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  margin: 10px 0;
+
+  background: #946a4d;
+  color: white;
+  cursor: pointer;
+
+  span {
+    font-family: "Overpass";
+    text-align: center;
+    font-size: 18px;
+    padding-left: 5px;
+  }
+
+  .calendar-icon {
+    width: 30px;
+    height: 30px;
+    background: url("../../assets/img/calendar.png") no-repeat center;
+    background-size: contain;
+  }
+}

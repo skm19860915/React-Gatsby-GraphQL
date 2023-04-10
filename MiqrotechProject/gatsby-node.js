@@ -1,159 +1,46 @@
-const path = require("path");
+const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
 
-  const ExecutivePage = path.resolve("./src/templates/ExecutivePage.tsx");
-  const BlogPage = path.resolve("./src/templates/BlogPage.tsx");
+  createTypes(`
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+      featuredImg: File @link(from: "featuredImg___NODE")
+    }
 
-  const executivesQuery = await graphql(`
-    {
-      allContentfulExecutive {
-        nodes {
-          fullName
-          headshot {
-            file {
-              url
-            }
-          }
-          linkedin
-          title
-          bio {
-            bio
-          }
-        }
-      }
+    type Frontmatter {
+      title: String!
+      featuredImgUrl: String
+      featuredImgAlt: String
     }
   `)
-  .then((result) => {
-    if (result.errors) {
-      console.error(result.errors);
-      return reject(result.errors);
-    }
+}
 
-    const pageData = result.data.allContentfulExecutive.nodes;
-    pageData.forEach((item, index, arr) => {
-      const pathName = item.fullName.replace(/\s/, "-").toLowerCase().trim();
-
-      createPage({
-        path: `/about/${pathName}`,
-        component: ExecutivePage,
-        context: {
-          executive: item,
-        },
-      });
-    });
-  })
-  .catch(error => {
-    console.error(error)
-  })
-
-  const blogPostsQuery = await graphql(`
-    {
-      allContentfulBlogPost {
-        tagList: distinct(field: moreTags___tagName)
-        nodes {
-          id
-          mainBlogImage {
-            file {
-              url
-              fileName
-            }
-          }
-          moreTags {
-            tagName
-          }
-          title
-          date(locale: "", formatString: "")
-          body {
-            childMarkdownRemark {
-              html
-            }
-          }
-          description
-          mediaFile {
-            file {
-              url
-              fileName
-            }
-          }
-        }
-      }
-    }
-  `)
-  .then((result) => {
-    if (result.errors) {
-      console.error(result.errors);
-      return reject(result.errors);
-    }
-
-    const pageData = result.data.allContentfulBlogPost.nodes;
-
-      pageData.forEach((page, index, arr) => {
-
-        let pathName = page.title
-          .split(" ")
-          .filter((e) => e !== "/")
-          .join(" ")
-          .toLowerCase()
-          .replace(/\s+/g, "-");
-
-        console.info(`building ${pathName}`)
-
-        createPage({
-          path: `/blog/${pathName}`,
-          component: BlogPage,
-          context: { allArticles: arr, articleData: page },
-        });
-      });
-    
-  })
-  .catch(error => {
-    console.error(error)
-  })
-
-};
-
-exports.onCreateWebpackConfig = ({
-  stage,
-  rules,
-  loaders,
-  plugins,
-  actions,
+exports.onCreateNode = async ({
+  node,
+  actions: { createNode },
+  store,
+  cache,
+  createNodeId,
 }) => {
-  if (stage === "build-html" || stage === "devleop-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /\.(gltf)$/i,
-            use: [
-              {
-                loader: "url-loader",
-              },
-            ],
-          },
-          {
-            test: /\@justinribeiro\/lite-youtube/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    });
-  }
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.(gltf)$/i,
-          use: [
-            {
-              loader: "url-loader",
-            },
-          ],
-        }
-      ],
-    },
-  });
-};
+  // For all MarkdownRemark nodes that have a featured image url, call createRemoteFileNode
+  if (
+    node.internal.type === "MarkdownRemark" &&
+    node.frontmatter.featuredImgUrl !== null
+  ) {
+    let fileNode = await createRemoteFileNode({
+      url: node.frontmatter.featuredImgUrl, // string that points to the URL of the image
+      parentNodeId: node.id, // id of the parent node of the fileNode you are going to create
+      createNode, // helper function in gatsby-node to generate the node
+      createNodeId, // helper function in gatsby-node to generate the node id
+      cache, // Gatsby's cache
+      store, // Gatsby's redux store
+    })
 
+    // if the file was created, attach the new node to the parent node
+    if (fileNode) {
+      node.featuredImg___NODE = fileNode.id
+    }
+  }
+}

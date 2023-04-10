@@ -1,0 +1,61 @@
+.tour-type-heading {
+  font-family: "Overpass";
+  font-size: 50px;
+  text-align: center;
+  font-size: 32px;
+  color: #443635;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.tour-type-button {
+  cursor: pointer;
+  background-color: #946a4d;
+  border: 2px solid #946a4d;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.tour-type-button:hover {
+  color: #946a4d;
+  background-color: white;
+  opacity: 0.6;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.tour-type-button:nth-child(2n) {
+  margin-left: 30px;
+}
+
+.tour-type-footer {
+  position: absolute;
+  bottom: 105px;
+  width: 100%;
+  text-align: center;
+}
+
+.tour-type-result {
+  font-size: 16px;
+  font-family: "Overpass";
+  color: #636569;
+  margin-bottom: 28px;
+}
+
+.tour-type-view-result {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #946a4d;
+  text-transform: uppercase;
+}
+
+.tour-type-view-result:hover {
+  text-decoration: none;
+  color: #946a4d;
+}
+/*# sourceMappingURL=styles.css.map */

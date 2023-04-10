@@ -1,0 +1,194 @@
+<svg id="building_view" data-name="building view" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="fit-content" viewBox="0 0 1589.04 1600">
+
+  <defs>
+    <style>
+      .cls-987 , .cls-975 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-987 , .cls-974 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-987 , .cls-987 4, .cls-987 8, .cls-987 9, .cls-977, .cls-9770, .cls-9775, .cls-976, .cls-974, .cls-973 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-987 5, .cls-977, .cls-976, .cls-974, .cls-973 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-977, .cls-973 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-976 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-987 4, .cls-987 6, .cls-9770, .cls-973 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-987 2, .cls-987 4, .cls-987 6, .cls-987 8, .cls-977 0, .cls-977 1, .cls-977 4, .cls-7 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-8 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+
+      .cls-987 2, .cls-9773, .cls-9774, .cls-9775, .cls-9 {
+        font-size: 12px;
+        font-family: ArialMT, Arial;
+        pointer-events: none;
+        fill: transparent;
+      }
+
+      .cls-987 0 {
+        letter-spacing: -0.02em;
+        pointer-events: none;
+        fill: transparent;
+      }
+
+      .cls-987 1, .cls-987 9, .cls-9775 {
+        fill: transparent;
+        stroke: transparent;
+        pointer-events: none;
+      }
+      .cls-987 16 {
+        fill: transparent;
+        stroke: transparent
+        pointer-events: none;
+      }
+
+      .cls-987 3 {
+        letter-spacing: -0.06em;
+        pointer-events: none;
+        fill: transparent;
+      }
+
+      .cls-987 4, .cls-987 6, .cls-987 8, .cls-977 0 {
+
+        fill: transparent;
+        stroke: transparent
+        pointer-events: none;
+      }
+
+      .cls-987 6 {
+        stroke-linejoin: bevel;
+        pointer-events: none;
+        fill: transparent;
+      }
+
+      .cls-987 7 {
+        fill: transparent;
+        stroke: transparent
+        pointer-events: none;
+      }
+
+      .cls-987 9, .cls-9775 {
+        fill: transparent;
+        stroke: transparent
+        pointer-events: none;
+      }
+
+      .cls-9770, .cls-9771, .cls-9772 {
+        fill: transparent;
+        stroke: transparent
+        pointer-events: none;
+      }
+
+      .cls-9773, .cls-9774 {
+        pointer-events: none;
+        fill: transparent;
+        stroke: transparent
+      }
+    </style>
+  </defs>
+  <title>Floor 1-9 vertical </title>
+    <image width="1588" height="1600" transform="translate(1.04)" href="https://lp.starmetalsresidences.com/static/building-fc3f4fa5983ec0e7479dacaabf266011.png"/>
+  <g id="Floor_1_-_Grey" data-name="Floor 1 - Grey">
+    <path class="cls-987 " d="M704.67,206.75a120.87,120.87,0,0,0-12.37-9c-4-2.57-13.59-7.27-33.24-14.89-5.42-2.11-10.45-3.79-15.85-5.36a175.44,175.44,0,0,0-20.28-4.39,181.53,181.53,0,0,0-48.73-1.52c-11.89,1.3-20.88,2.16-43.32,9.56C519,185,504.74,189,498.17,191.05,488,194.21,429.25,213.41,423,215.48l-1.89,19.1-271,88-2.73,2-50,42.32-2.18,1.83-14.77,4.77-34.64,11.2,30.65,83L83.84,465,99.57,508.2l66.82-56.07,196.22-63.76,27.94,33.31,202-65.58.23,385.06,169.51,1-.15-17.75H734.24v-32.9h46.33V657.25H762.36l-.09-439.71-8.75-10.79" transform="translate(-22.26 -20.4)"/>
+    <polygon class="cls-977" points="401.03 1290.44 381.07 1290.42 381.07 1188.7 397.23 1188.7 397.23 1273.77 708.68 1273.77 708.68 1241.68 739.61 1241.63 739.61 1366.82 672.45 1366.82 672.45 1420.22 653.48 1420.22 653.48 1393.02 654.03 1289.96 401.03 1290.44"/>
+    <path class="cls-976" d="M761.87,1244.93" transform="translate(-22.26 -20.4)"/>
+    <rect class="cls-975" x="297.37" y="860.33" width="555.96" height="311.72" transform="translate(-463.09 1571.14) rotate(-90)"/>
+    <path class="cls-987 " d="M524.24,24.77l44.47,3.83L660.79,38l1.39,138-2.7,7.65c-1.26-.57-3.07-1.37-5.27-2.25-2.79-1.12-13.6-5.34-31.1-8.16a193.87,193.87,0,0,0-37.59-2.39A185.53,185.53,0,0,0,553.15,175c-8.87,1.93-39.82,11.78-46,13.6l.91-8.93h0" transform="translate(-22.26 -20.4)"/>
+    <polygon class="cls-987 " points="739.26 278.01 846.59 278.01 846.59 240.68 839.08 202.78 826.43 168.82 806.88 133.45 782.08 101.91 753.92 74.93 720.94 48.74 684.64 31.64 669.25 26.59 669.25 177.92 681.55 186.57 730.48 186.96 739.63 197.79 739.26 278.01"/>
+    <polygon class="cls-987 " points="1.07 301.95 288.58 60.19 317.13 40.12 364.16 17.59 403.55 6.49 439.69 0.5 462.68 1.34 463.02 1.35 452.06 105.62 410.93 101.29 398.81 214.38 127.83 302.43 72.88 348.54 23.47 364.51 1.07 301.95"/>
+    <polyline class="cls-987 " points="213.14 970.73 193.12 970.73 193.12 1010.83 202.91 1010.83 202.91 1050.18 225.73 1050.18 225.73 1082.36 250.95 1082.36 250.92 1100.56 397.4 1100.56 397.4 745.26 352.4 745.26 352.4 765.47 320.11 765.47 320.11 780.23 280.12 780.23 280.12 795.42 246.74 795.42 246.74 827.22 213.14 827.22 213.14 843.55 174.22 843.55"/>
+    <rect class="cls-987 " x="303.96" y="1025.8" width="60.97" height="30.85" transform="translate(-729.04 1355.27) rotate(-90)"/>
+    <polyline class="cls-987 " points="270.21 1100.56 270.21 991.26 241.04 991.26 241.04 970.73 213.03 970.73"/>
+    <polyline class="cls-974" points="463.02 1.35 479.12 1.35 638.54 17.56 644.37 17.94 667.59 25.42 686.96 31.89 721.43 48.65 752.98 72.97 783.83 102.13 807.6 133.04 827.16 168.41 839.57 201.17 847.32 240.27 847.32 277.6 847.32 299.32 739.87 299.48"/>
+    <polyline class="cls-987 " points="214.41 844.88 175.27 844.88 175.12 866.74 154.13 866.74 154.13 907.98 166.67 907.98 166.67 940.84 180.2 940.84 180.2 978.22 249.28 977.97 249.28 828.47 214.27 828.47 214.41 844.88"/>
+  </g>
+  <g id="Floor_2_-_Grey" data-name="Floor 2 - Grey">
+    <polyline class="cls-987 " points="214.41 844.88 175.27 844.88 175.12 866.74 154.13 866.74 154.13 907.98 166.67 907.98 166.67 940.84 180.2 940.84 180.2 978.22 249.28 977.97 249.28 828.47 214.27 828.47 214.41 844.88"/>
+    <polyline class="cls-975" points="704.15 724.21 741.17 724.24 741.29 1241.7 704.15 1241.79"/>
+    <polygon class="cls-987 " points="271.57 978.22 271.43 939.97 257.43 939.97 257.43 905.49 249.7 905.35 249.7 978.35 271.57 978.22"/>
+    <polygon class="cls-987 " points="741.17 724.24 569.17 724.21 569.17 295 569.17 289.73 576.49 211.93 586.02 124.3 662.72 132.32 662.72 149.38 650.11 149.52 649.97 207.84 664.68 207.98 664.97 168.13 696.51 168.13 696.51 210.2 723.37 210.2 723.37 237.58 738.61 237.58 738.61 267.21 758.2 267.21 758.2 283.63 845.68 283.63 845.68 758.2 741.14 758.2 741.17 724.24"/>
+    <rect class="cls-974" x="728.94" y="1259.57" width="32.06" height="37.14" transform="translate(-555.42 2002.71) rotate(-90)"/>
+    <path class="cls-973" d="M373.52,951h-57" transform="translate(-22.26 -20.4)"/>
+    <line class="cls-973" x1="322.78" y1="898.28" x2="322.78" y2="930.57"/>
+    <polyline class="cls-974" points="398.76 827.41 383.38 827.41 383.38 835.78 354.28 835.78 354.28 861.81 321.47 861.81 321.47 869.38 305.04 869.38 305.04 880.36 249.84 880.36 249.84 880.82 249.84 906.11 257.43 906.11 257.43 939.97 271.57 939.97 271.57 978.22 283.55 978.22 283.68 1011.51 296.96 1011.51 297.21 1049.96 316.25 1049.96 316.25 1050.43 316.25 1083 330.81 1083 330.81 1121.77 359.31 1121.77 359.31 1155.47 375.91 1155.47 375.91 1188.87 381.07 1187.96 381.07 1289.44 739.24 1289.44 739.24 1466.42 758.47 1471.9 758.66 758.2 741.14 758.2 741.14 1273.77 398.76 1273.77 398.96 1140.84 395.27 1140.84 304.41 983.82 304.41 968.25 372.68 968.25 372.68 924.16 399.05 924.16 398.76 827.41"/>
+    <polyline class="cls-977" points="304.41 968.25 304.41 962.9 294.37 962.9 294.37 898.28 351.12 898.28 351.12 930.57 372.68 930.57"/>
+    <polygon class="cls-977" points="468.44 112.23 405.52 105.14 365.58 141.46 381.99 161.51 436.65 167.01 438.76 146.7 464.54 149.42 468.44 112.23"/>
+    <line class="cls-977" x1="403.53" y1="163.71" x2="409.92" y2="105.61"/>
+    <polyline class="cls-977" points="386.19 122.36 395.52 133.49 465.42 141.03"/>
+    <path class="cls-977" d="M429,155.06" transform="translate(-22.26 -20.4)"/>
+    <line class="cls-977" x1="106.26" y1="322.92" x2="124.29" y2="343.47"/>
+    <polyline class="cls-974" points="372.68 924.16 372.68 851.44 398.76 851.59"/>
+    <line class="cls-974" x1="228.15" y1="256.01" x2="242.36" y2="244.09"/>
+    <polygon class="cls-975" points="446.96 724.21 704.15 724.21 704.15 782.13 704.15 1241.79 704.15 1273.77 398.76 1273.77 398.76 747.68 447.05 747.68 446.96 724.21"/>
+    <line class="cls-977" x1="739.24" y1="1405.67" x2="758.48" y2="1405.67"/>
+  </g>
+  <g id="Floor_3_-_Grey" data-name="Floor 3 - Grey">
+    <polyline class="cls-975" points="704.15 724.21 741.17 724.24 741.29 1241.7 704.15 1241.79"/>
+    <polygon class="cls-987 " points="741.17 724.24 569.17 724.21 569.17 295 569.17 289.73 576.49 211.93 586.02 124.3 662.72 132.32 662.72 149.38 650.11 149.52 649.97 207.84 664.68 207.98 664.97 168.13 696.51 168.13 696.51 210.2 723.37 210.2 723.37 237.58 738.61 237.58 738.61 354.79 758.2 354.79 758.5 354.79 845.52 354.79 845.68 688.1 741.21 687.14 741.17 724.24"/>
+    <rect class="cls-974" x="728.94" y="1259.57" width="32.06" height="37.14" transform="translate(-555.42 2002.71) rotate(-90)"/>
+    <path class="cls-973" d="M373.52,951h-57" transform="translate(-22.26 -20.4)"/>
+    <line class="cls-973" x1="322.78" y1="898.28" x2="322.78" y2="930.57"/>
+    <polyline class="cls-974" points="398.76 826.87 383 826.87 383 835.17 354.28 835.09 354.28 861.81 321.47 861.81 321.47 869.38 305.04 869.38 305.04 880.36 249.84 880.36 249.84 880.82 249.84 906.4 256.36 906.28 256.53 939.97 270.09 939.97 270.09 978.22 282.66 978.22 283.11 1011.51 295.5 1011.51 295.5 1049.96 316.25 1049.96 316.25 1050.43 316.25 1083 330.81 1083 330.81 1121.77 359.31 1121.77 359.31 1155.47 375.91 1155.47 375.91 1188.87 381.07 1187.96 381.07 1289.44 739.24 1289.44 739.24 1466.42 758.47 1471.9 758.66 687.3 741.14 687.3 741.14 1273.77 398.76 1273.77 398.76 1140.84 395.27 1140.84 304.41 983.82 304.41 968.25 372.68 968.25 372.68 924.16 399.05 924.16 398.76 827.41"/>
+    <polyline class="cls-977" points="304.41 968.25 304.41 962.9 294.37 962.9 294.37 898.28 351.12 898.28 351.12 930.57 372.68 930.57"/>
+    <polygon class="cls-977" points="468.44 112.23 405.52 105.14 365.58 141.46 381.99 161.51 436.65 167.01 438.76 146.7 464.54 149.42 468.44 112.23"/>
+    <line class="cls-977" x1="403.53" y1="163.71" x2="409.92" y2="105.61"/>
+    <polyline class="cls-977" points="386.19 122.36 395.52 133.49 465.42 141.03"/>
+    <path class="cls-977" d="M429,155.06" transform="translate(-22.26 -20.4)"/>
+    <line class="cls-977" x1="106.26" y1="322.92" x2="124.29" y2="343.47"/>
+    <polyline class="cls-974" points="372.68 924.16 372.68 851.44 398.76 851.59"/>
+    <line class="cls-974" x1="228.15" y1="256.01" x2="242.36" y2="244.09"/>
+    <polygon class="cls-975" points="446.96 724.21 704.15 724.21 704.15 782.13 704.15 1241.79 704.15 1273.77 398.76 1273.77 398.76 747.68 447.05 747.68 446.96 724.21"/>
+  </g>
+
+
+
+
+   <polygon id="Floor_1" floor-num="0" data-name="Floor 1" points="1.04 1130.71 649.63 1203.87 1259.3 1150.45 1259.3 1032 649.63 1061.69 1.04 1014.58 1.04 1130.71" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_2" floor-num="1" data-name="Floor 2" points="1.04 1014.58 642.58 1061.69 1259.3 1032 1259.3 930.97 640.33 949.55 1.04 907.74 1.04 1014.58" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_3" floor-num="2" data-name="Floor 3" points="1.04 907.74 640.33 949.55 1259.3 930.97 1259.3 829.93 642.58 841.68 1.04 813.68 1.04 907.74" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_4" floor-num="3" data-name="Floor 4" points="1.04 813.68 642.58 841.68 1259.3 829.93 1259.3 724.64 642.66 729.07 1.04 718.45 1.04 813.68" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_5" floor-num="4" data-name="Floor 5" points="1.04 718.45 642.58 730.59 1259.3 724.64 1259.3 618.58 642.66 610.45 1.04 624.39 1.04 718.45" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_6" floor-num="5" data-name="Floor 6" points="1.04 624.39 642.66 610.45 1259.3 618.58 1259.3 515.22 642.66 501.29 0.5 529.17 1.04 624.39" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_7" floor-num="6" data-name="Floor 7" points="0.5 529.17 642.66 501.29 1259.3 515.22 1259.3 416.52 642.66 390.19 1.04 433.55 0.5 529.17" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_8" floor-num="7" data-name="Floor 8" points="1.04 433.55 642.66 390.19 1259.3 416.52 1259.3 312.77 642.66 280.26 1.04 337.55 1.04 433.55" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+  <polygon id="Floor_9" floor-num="8" data-name="Floor 9" points="1.04 337.55 642.66 280.26 1259.3 312.77 1259.3 195.1 642.66 157.94 0.5 235.35 1.04 337.55" style="fill: #ffffff;stroke: #ffffff;stroke-miterlimit: 10;opacity: 0.75"/>
+
+</svg>

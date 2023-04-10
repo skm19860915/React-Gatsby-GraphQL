@@ -1,0 +1,117 @@
+.prefooter {
+    font-family: 'Overpass';
+    overflow: hidden;
+    padding-top: 100px;
+    background-color: white;
+    @media screen and (max-width: 1024px) {
+        margin-top: -1px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 50px;
+    }
+    .chatbox {
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: 152px;
+        cursor: pointer;
+        background: url('../../assets/img/chat_icon.png') no-repeat center;
+        background-size: contain;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            display: none;
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        &:hover {}
+    }
+    &-section-1 {}
+    &-section-2 {
+        &-1 {
+            position: relative;
+            z-index: 9;
+            width: auto;
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 767px) {}
+        }
+        &-text {
+            position: relative;
+            font-size: 36px;
+            font-weight: bold;
+            color: #231F20;
+            font-family: 'Noto Sans KR';
+            text-align: left;
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                font-size: 32px;
+                font-weight: bold;
+                text-align: left;
+                color: #231F20;
+                font-family: 'Noto Sans KR';
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        &-CTA {
+            margin-top: 30px;
+            font-size: 16px;
+            font-family: 'Overpass';
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            background-color: #946A4D;
+            cursor: pointer;
+            border: 1px solid #946A4D;
+            width: 250px;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            text-align: center;
+            transition: all .2s ease;
+            a {
+                color: white;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &:hover {
+                background-color: rgba(255, 255, 255, .7);
+                color: #946A4D;
+                a {
+                    color: #946A4D;
+                }
+            }
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                font-size: 10px;
+                padding: 20px;
+                width: 200px;
+                margin-top: 15px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+                padding: 20px;
+                width: 220px;
+                margin-top: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &-wave {
+            position: relative;
+            height: 100px;
+            margin-top: 85px;
+            width: 100%;
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                margin-top: -40px;
+                height: auto;
+                padding-top: 0px;
+                margin-left: auto;
+            }
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+}

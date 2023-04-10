@@ -1,123 +1,126 @@
-const path = require("path");
-require("dotenv").config();
-
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
-  flags: {
-    DEV_SSR: false
-  },
   siteMetadata: {
-    siteUrl: "https://miqrotech.com",
-    title: "mIQrotech",
-    author: "Reform Collective",
+    title: `SMR`,
+    description: `SMR website.`,
+    author: `@allenmorris`,
   },
+
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-loadable-components-ssr",
-    "gatsby-plugin-glslify",
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-plugin-hubspot",
-      options: {
-        trackingCode: "20379515",
-        respectDNT: true,
-        productionOnly: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: 'https://miqrotech.us5.list-manage.com/subscribe/post?u=2327c39cb10439bcfe1fa5d95&amp;id=107dd7b425', // string; add your MC list endpoint here; see instructions below
-        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
-      },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-svgr`,
-      options: {
-        prettier: true,
-        svgo: true,
-        memo: true,
-        svgoConfig: {
-          plugins: [
-            { removeViewBox: false },
-            { removeDimensions: true },
-            { removeRasterImages: true },
-            { reusePaths: true },
-            { cleanupIDs: false },
-            { prefixIds: false },
-            { removeUselessDefs: true },
-          ],
-        },
-      },
-    },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/img`,
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     google: {
+    //       families: ["Overpass", "Noto Sans KR"],
+    //     },
+    //   },
+    // },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
+        id: "GTM-MBXK2MC",
+
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+
+        // Specify optional GTM environment details.
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
+    // {
+    //   resolve: `gatsby-source-googlemaps-static`,
+    //   options: {
+    //     key: `AIzaSyAu7aGA02Xnk_FD2X5QqQjed4rXS5k5aKM`,
+    //     center: `33.7832909,-84.4132521`,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Overpass`,
+    //       },
+    //       {
+    //         family: `Noto Sans KR`,
+    //       },
+    //     ],
+    //   },
+    // },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `mIQrotech`,
-        short_name: `mIQrotech`,
-        start_url: `/`,
-        background_color: `#050505`,
-        theme_color: `#050505`,
-        display: `minimal-ui`,
-        icon: `src/images/svg/faviconBlack.svg`, // This path is relative to the root of the site.
-        theme_color_in_head: true
-      },
+      resolve: `gatsby-plugin-styled-components`,
     },
     {
-      resolve: "gatsby-plugin-alias-imports",
+      resolve: `gatsby-source-graphql`,
       options: {
-        alias: {
-          "@components": path.resolve(__dirname, "src/components"),
-          "@styles": path.resolve(__dirname, "src/styles"),
-          "@sections": path.resolve(__dirname, "src/sections"),
-          "@svg": path.resolve(__dirname, "src/images/svg"),
-          "@jpg": path.resolve(__dirname, "src/images/jpg"),
-          "@png": path.resolve(__dirname, "src/images/png"),
-          "@fonts": path.resolve(__dirname, "src/fonts"),
-          "@shaders": path.resolve(__dirname, "src/shaders"),
-          "@hooks": path.resolve(__dirname, "src/hooks"),
-          "@json": path.resolve(__dirname, "src/json"),
+        url: `https://amcodigitalmedia.com/graphql`,
+        fieldName: "craft",
+        typeName: "Craft",
+        headers: {
+          Authorization: "Bearer 67NmGT9a0kNWB-xpGnP0pHgMRHj4DsOx",
         },
       },
     },
     {
-      resolve: `gatsby-plugin-gdpr-cookies`,
+      resolve: "gatsby-plugin-react-leaflet",
       options: {
-        googleAnalytics: {
-          trackingId: 'UA-198070641-1', // leave empty if you want to disable the tracker
-          cookieName: 'gatsby-gdpr-google-analytics', // default
-          anonymize: true, // default
-          allowAdFeatures: false // default
-        },
-        environments: ['production', 'development']
+        linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 100,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `gatsby-starter-default`,
+    //     short_name: `starter`,
+    //     start_url: `/`,
+    //     background_color: `#663399`,
+    //     theme_color: `#663399`,
+    //     display: `minimal-ui`,
+    //     icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+    //   },
+    // },
+    `gatsby-plugin-typescript`,
+    `gatsby-transformer-remote-image`,
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: "myNodes",
+        imagePath: "imageUrl",
+        // OPTIONAL: Name you want to give new image field on the node.
+        // Defaults to 'localImage'.
+        name: "allItemImages",
+      },
+    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
-};
+}

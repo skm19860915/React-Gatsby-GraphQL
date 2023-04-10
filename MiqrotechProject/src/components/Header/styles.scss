@@ -1,0 +1,87 @@
+.header {
+    background-color: #443635;
+    height: 122px;
+    color: white;
+    padding: 41px 53px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        height: 74px;
+        padding: 15px 30px;
+    }
+    @media screen and (max-width: 767px) {
+        height: 80px;
+        padding: 33px 21px 21px 25px;
+    }
+    .logo {
+        margin-right: auto;
+        background: url('../../assets/img/logo_white.svg') no-repeat left;
+        background-size: 100%;
+        width: 320px;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            height: 25px;
+            width: 200px;
+            margin-top: 12px;
+        }
+        @media screen and (max-width: 767px) {
+            width: 180px;
+        }
+    }
+    &-number {
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            line-height: 45px;
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    .right-section {
+        margin-left: auto;
+        display: flex;
+        font-family: "Overpass";
+        font-size: 10px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        &>* {
+            margin-left: 42px;
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                margin-left: 24px;
+            }
+        }
+        .lease-button {
+            padding: 7px 70px;
+            font-size: 10px;
+            line-height: 25px;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            &:hover {
+                color: #443635;
+                opacity: 0.8;
+                background-color: white;
+                transition: all 300ms ease-in-out;
+                text-decoration: none;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                line-height: 28px;
+                padding: 7px 50px;
+            }
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+        .hamburger-button {
+            cursor: pointer;
+            &:hover {
+                svg {
+                    color: #443635;
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                margin-top: 2px;
+            }
+        }
+    }
+}

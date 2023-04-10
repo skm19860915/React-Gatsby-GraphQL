@@ -1,0 +1,156 @@
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    z-index: 9999999;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.ReactModal__Content {}
+
+.side-menu {
+    background-color: #443635;
+    color: white;
+    width: 735px;
+    padding: 50px 0 50px 135px;
+    height: 100vh;
+    padding-left: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 1024px) {
+        width: 100vw;
+        padding: 30px;
+    }
+    @media screen and (max-width: 767px) {
+        // padding: 50px 30px 60px 30px;
+    }
+    &-header {
+        display: flex;
+        margin-right: 60px;
+        @media screen and (max-width: 1024px) {
+            margin-right: 0;
+        }
+    }
+    &-logo {
+        margin-right: auto;
+        background: url('../../assets/img/logo_white.png') no-repeat left;
+        background-size: contain;
+        width: 300px;
+        height: 40px;
+        @media screen and (max-width: 767px) {
+            width: 150px;
+            height: 20px;
+        }
+    }
+    &-close {
+        margin-left: auto;
+        cursor: pointer;
+    }
+    &-content {
+        padding: 0;
+        @media screen and (max-width: 1024px) {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 0;
+        }
+        &-item {
+            text-transform: uppercase;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #946a4d;
+            font-size: 20px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            font-family: "Noto Sans KR";
+            letter-spacing: 0px;
+            line-height: 72px;
+            cursor: pointer;
+            &:hover {
+                color: #bb9a81;
+                transition: all 200ms ease-in-out;
+                border-bottom: 2px solid #a47a5d;
+                letter-spacing: 4px;
+                text-decoration: none;
+            }
+            &:last-child {
+                @media screen and (max-width: 1024px) {
+                    border: none;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                text-align: center;
+                line-height: 70px;
+                font-size: 22px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+                line-height: 50px;
+            }
+        }
+    }
+    &-lease {
+        background-color: #946a4d;
+        font-family: "Overpass";
+        letter-spacing: 4px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        width: 300px;
+        height: 75px;
+        line-height: 75px;
+        cursor: pointer;
+        &:hover {
+            color: #946a4d;
+            background-color: white;
+            opacity: 0.6;
+            transition: all 300ms ease-in-out;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 240px;
+            height: 60px;
+            line-height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (max-width: 767px) {
+            width: 240px;
+            height: 50px;
+            line-height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &-address {
+        font-size: 12px;
+        text-align: left;
+        color: white;
+        font-family: "Overpass";
+        line-height: 30px;
+        @media screen and (max-width: 1024px) {
+            text-align: center;
+            letter-spacing: 1px;
+        }
+    }
+    &-footer {
+        display: flex;
+        &>*:first-child {
+            margin-right: 55px;
+        }
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

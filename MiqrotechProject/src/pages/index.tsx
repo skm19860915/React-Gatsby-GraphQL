@@ -1,93 +1,223 @@
-import React, { useContext } from "react";
-import loadable from "@loadable/component";
-import { graphql } from "gatsby";
-import { ScreenContext } from "@components/Layout";
-import colors from "@styles/colors";
-import useMedia from '@hooks/useMedia'
-import DataStore from "../sections/home/DataStore";
+import * as React from "react"
+import { Link, graphql } from "gatsby"
+import Header from "../components/header/index"
+import Prefooter from "../components/prefooter"
+import Footer from "../components/footer"
+import Component1 from "../components/component1"
+import Component2 from "../components/component2"
+import Hero from "../components/hero"
+import Lifestyle from "../components/lifestyle"
+import Wave3 from "../components/wave3"
+import Wave from "../components/wave"
+import {
+  Home,
+  Section1,
+  Section1_Heading,
+  Section2,
+  Section21,
+  Section2_Heading,
+  Section3,
+  Section3_Heading,
+  Section4,
+  Section4_Heading,
+} from "../styles/home"
+import { FaFacebookF, FaInstagram } from "react-icons/fa"
+import SEO from "../components/seo"
+import NeighbourhoodImg from "../assets/img/neighbourhood.png"
+import NeighbourhoodImg2 from "../assets/img/neighbourhood2.png"
+import renderHTML from "react-render-html"
+import { convertImgUrl } from "../utils/imageKit"
 
-const Header = loadable(() => import("@components/Header"));
-const SEO = loadable(() => import("@components/SEO"));
-
-const Hero = loadable(() => import("@sections/home/Hero"));
-const Insights = loadable(() => import("@sections/home/Insights"));
-const Solutions = loadable(() => import("@sections/home/Solutions"));
-const Causes = loadable(() => import("@sections/home/Causes"));
-const Discover = loadable(() => import("@sections/home/Discover"));
-const Challenging = loadable(() => import("@sections/home/Challenging"));
-const PartnerCTA = loadable(() => import("@sections/home/PartnerCTA"));
-const ReadMore = loadable(() => import("@sections/home/ReadMore"));
-
-type props = {
-  data: any;
-};
-
-const Home: React.FC<props> = ({ data }) => {
-  const screen = useContext(ScreenContext);
-  const content1OfHero = useMedia(DataStore.t_hero_1_1, DataStore.t_hero_1_1, DataStore.t_hero_1_1, DataStore.t_hero_1_2);
-  const content1OfInsights = useMedia(DataStore.t_insights_1_1, DataStore.t_insights_1_1, DataStore.t_insights_1_2, DataStore.t_insights_1_3);
-  const content1OfCause = useMedia(DataStore.t_cause_3_1, DataStore.t_cause_3_1, DataStore.t_cause_3_1, DataStore.t_cause_3_2);
-  const content1OfDiscover = useMedia(DataStore.t_discover_1_1, DataStore.t_discover_1_1, DataStore.t_discover_1_2, DataStore.t_discover_1_3);
+const HomePage: React.FC = (props: any) => {
+  const {
+    WebsitepageTitle,
+    websiteKeywords,
+    websitePageDescription,
+    heroBlock,
+    standardContentBlock,
+    callToActionBlock,
+  } = props.data.craft.entry
 
   return (
-    <>
-      <Header backgroundTrigger={"#hero-bottom"} startingTextColor={colors.white} startingBackgroundColor={screen.mobile ? colors.black : "transparent"}/>
-      <SEO title="Home | mIQrotech" />
-      <Hero txt1={content1OfHero} heroData={data.heroBackgroundImg.edges[0].node} />
-      <Insights txt1={content1OfInsights} txt2={DataStore.t_insights_2} />
-      <Solutions txt1={DataStore.t_solution_1} solutionData={data.allContentfulSolutionSection.nodes} />
-      <Causes txt1={DataStore.t_cause_1} txt2={DataStore.t_cause_2} txt3={content1OfCause} causeData={data.allContentfulCauseSection.nodes} />
-      <Discover txt1={content1OfDiscover} />
-      <Challenging txt1={DataStore.t_challenging_1} txt2={DataStore.t_challenging_2} />
-      <ReadMore storyData={data.allContentfulBlogPost.nodes} txt1={DataStore.t_readMore_1} />
-      <PartnerCTA txt1={DataStore.t_partner_1} />
-    </>
-  );
-};
+    <Home>
+      <SEO
+        title={WebsitepageTitle || ""}
+        keywords={websiteKeywords || ""}
+        description={websitePageDescription || ""}
+      />
+      <Header></Header>
+      <Hero
+        title={heroBlock[0].headline || ""}
+        img={heroBlock[0].heroImage[0].url || ""}
+        action={heroBlock[0].callToActionText || ""}
+        // link={heroBlock[0].callToActionLink || ""}
+        link={"/amenities"}
+        type={0}
+      />
+      <Lifestyle
+        headline={standardContentBlock[0].headline || ""}
+        subHeadline={standardContentBlock[0].subheadline || ""}
+        action1={standardContentBlock[0].callToAction1Text || ""}
+        action2={standardContentBlock[0].callToAction2Text || ""}
+        link1={standardContentBlock[0].callToActionLink || ""}
+        link2={standardContentBlock[0].callToAction2Link || ""}
+        img1={standardContentBlock[0].heroImage[0].url || ""}
+        img2={standardContentBlock[0].image2[0].url || ""}
+        text={standardContentBlock[0].longText || ""}
+      />
 
-export default Home;
+      <Section1
+        img={convertImgUrl(
+          standardContentBlock[1].backgroundImage[0].url || "",
+          false
+        )}
+        mobileImg={convertImgUrl(
+          standardContentBlock[1].backgroundImage[0].url || "",
+          true
+        )}
+      >
+        <Section1_Heading>
+          {renderHTML(standardContentBlock[1].textBlock || "")}
+        </Section1_Heading>
+      </Section1>
+      <Component1
+        desc={standardContentBlock[2].longText || ""}
+        bigImg={standardContentBlock[2].image2[0].url || ""}
+        smallImg={standardContentBlock[2].heroImage[0].url || ""}
+        heading={standardContentBlock[2].headline || ""}
+        action={standardContentBlock[2].callToAction1Text || ""}
+        link={standardContentBlock[2].callToActionLink || ""}
+        containDetail={true}
+        descTop={false}
+      />
+      <Section2>
+        <Wave3></Wave3>
+        <Section2_Heading>
+          {renderHTML(standardContentBlock[3].textBlock || "")}
+        </Section2_Heading>
+        <Wave3></Wave3>
+      </Section2>
+      <Section21 id="section21">
+        <Wave id="section21" />
+      </Section21>
+      <Component2
+        desc={standardContentBlock[4].longText || ""}
+        smallImg={standardContentBlock[4].image2[0].url || ""}
+        bigImg={standardContentBlock[4].heroImage[0].url || ""}
+        heading={standardContentBlock[4].headline || ""}
+        action={standardContentBlock[4].callToAction1Text || ""}
+        link={standardContentBlock[4].callToActionLink || ""}
+        containDetail={true}
+        descTop={false}
+      />
+      <Section3>
+        <Wave3></Wave3>
+        <Section3_Heading>
+          {renderHTML(standardContentBlock[5].textBlock || "")}
+        </Section3_Heading>
+        <Wave3></Wave3>
+      </Section3>
+      <Component1
+        desc={standardContentBlock[6].longText || ""}
+        bigImg={standardContentBlock[6].image2[0].url || ""}
+        smallImg={standardContentBlock[6].heroImage[0].url || ""}
+        heading={standardContentBlock[6].headline || ""}
+        action={standardContentBlock[6].callToAction1Text || ""}
+        link={standardContentBlock[6].callToActionLink || ""}
+        containDetail={true}
+        descTop={false}
+      />
+      <Section4>
+        <Wave3></Wave3>
+        <Section4_Heading>
+          {renderHTML(standardContentBlock[7].textBlock || "")}
+        </Section4_Heading>
+        <Wave3></Wave3>
+      </Section4>
 
-export const pageQuery = graphql`
+      {/* <Component2
+        desc={standardContentBlock[8].longText || ""}
+        bigImg={standardContentBlock[8].image2[0].url || ""}
+        smallImg={standardContentBlock[8].heroImage[0].url || ""}
+        heading={standardContentBlock[8].headline || ""}
+        action={standardContentBlock[8].callToAction1Text || ""}
+        link={standardContentBlock[8].callToActionLink || ""}
+        containDetail={true}
+        descTop={false}
+      /> */}
+
+      <Prefooter
+        headline={callToActionBlock[0].headline || ""}
+        action={callToActionBlock[0].callToActionTextblock || ""}
+        img={callToActionBlock[0].heroImage[0].url || ""}
+        backImg={callToActionBlock[0].backgroundImage[0].url || ""}
+        link={callToActionBlock[0].callToActionLinkblock || ""}
+      ></Prefooter>
+      <Footer></Footer>
+    </Home>
+  )
+}
+
+export default HomePage
+export const homeQuery = graphql`
   query {
-    heroBackgroundImg: allContentfulAsset(filter: {contentful_id: {eq: "3H06edymmG1kSiJEHP6ty9"}}) {
-      edges {
-        node {
+    craft {
+      entry(section: "smrLandingPage", site: "starMetalsResidential") {
+        id
+        ... on Craft_smrLandingPage_smrLandingPage_Entry {
+          heroBlock {
+            ... on Craft_heroBlock_BlockType {
+              headline
+              heroImage {
+                url
+              }
+              callToActionText
+              callToActionLink
+            }
+          }
+          standardContentBlock {
+            ... on Craft_standardContentBlock_matrixContentBlock_BlockType {
+              headline
+              subheadline
+              teaserText
+              longText
+              callToActionLink
+              callToAction1Text
+              callToAction2Text
+              callToAction2Link
+              heroImage {
+                url
+              }
+              image2 {
+                url
+              }
+            }
+            ... on Craft_standardContentBlock_simpleTextBlock_BlockType {
+              textBlock
+              backgroundImage {
+                url
+              }
+            }
+          }
+          callToActionBlock {
+            ... on Craft_callToActionBlock_BlockType {
+              headline
+              callToActionTextblock
+              callToActionLinkblock
+              heroImage {
+                url
+              }
+              backgroundImage {
+                url
+              }
+            }
+          }
           title
-          gatsbyImageData
-        }
-      }
-    }
-    allContentfulBlogPost {
-      nodes {
-        title
-        date
-        description
-        featured
-        mainBlogImage {
-          gatsbyImageData(placeholder: BLURRED, formats: [WEBP, JPG])
-        }
-      }
-    }
-    allContentfulCauseSection (sort: {fields: sortNumber}, limit: 5) {
-      nodes {
-        sortNumber
-        title
-        description {
-          description
-        }
-        photo {
-          gatsbyImageData(formats: JPG, quality: 100)
-        }
-      }
-    }
-    allContentfulSolutionSection (sort: {fields: sortNumber}) {
-      nodes {
-        sortNumber
-        title
-        description {
-          description
+          websitePageDescription
+          websiteKeywords
+          WebsitepageTitle
         }
       }
     }
   }
-`;
+`

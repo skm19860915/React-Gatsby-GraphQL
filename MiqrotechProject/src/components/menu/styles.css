@@ -1,0 +1,115 @@
+.ReactModal__Overlay {
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.side-menu {
+    background-color: #443635;
+    color: white;
+    width: 735px;
+    padding: 50px 0 50px 135px;
+    height: 100vh;
+    padding-left: 135px;
+}
+
+@media screen and (max-width: 1024px) {
+    .side-menu {
+        width: 100%;
+    }
+}
+
+.side-menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px;
+    margin-right: 60px;
+}
+
+.side-menu-logo {
+    margin-right: auto;
+}
+
+.side-menu-close {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.side-menu-content-item {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 3px;
+    margin-top: 20px;
+    border-bottom: 2px solid #946a4d;
+    font-size: 30px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: "Noto Sans KR";
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.side-menu-content-item:hover {
+    color: #bb9a81;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    border-bottom: 2px solid #a47a5d;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.side-menu-lease {
+    background-color: #946a4d;
+    font-family: "Overpass";
+    padding: 30px 78px;
+    letter-spacing: 4px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.side-menu-lease:hover {
+    color: #946a4d;
+    background-color: white;
+    opacity: 0.6;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.side-menu-address {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin-bottom: 60px;
+    font-family: "Overpass";
+}
+
+.side-menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.side-menu-footer>* {
+    margin-right: 55px;
+}
+
+
+/*# sourceMappingURL=styles.css.map */

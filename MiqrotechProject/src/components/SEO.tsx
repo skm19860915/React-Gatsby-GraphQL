@@ -1,25 +1,46 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+/**
+ * SEO component that queries for data with
+ *  Gatsby's useStaticQuery React hook
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-function SEO({ description, lang, meta, title, image, url }) {
-  const { site } = useStaticQuery(
+import React from "react"
+import Helmet from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
+import Favicon from "react-favicon"
+
+interface Props {
+  description?: string
+  lang?: string
+  meta?: Array<any>
+  title: string
+  keywords: string
+}
+
+function SEO({ description, lang, meta, title, keywords }: Props) {
+  lang = lang || "en"
+  meta = meta || []
+
+  const { craft } = useStaticQuery(
     graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
+      query seoQuery {
+        craft {
+          entry(section: "smrSitewides", site: "starMetalsResidential") {
+            ... on Craft_smrSitewides_smrSitewides_Entry {
+              id
+              favicon {
+                url
+              }
+              headcode
+            }
           }
         }
       }
     `
-  );
+  )
 
-  const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
+  const metaDescription = description
 
   return (
     <Helmet
@@ -27,19 +48,19 @@ function SEO({ description, lang, meta, title, image, url }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`${title}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
+          name: `keywords`,
+          content: keywords,
         },
         {
-          property: "og:image",
-          content: image || "",
+          property: `og:title`,
+          content: title,
         },
         {
           property: `og:description`,
@@ -50,20 +71,16 @@ function SEO({ description, lang, meta, title, image, url }) {
           content: `website`,
         },
         {
-          property: `og:url`,
-          content: url,
+          property: `og:image`,
+          content: `http://amcocmsassets.s3.amazonaws.com/smr/01_Header-Star-Metals-Residences-render-1814x885-01.jpg`,
         },
         {
           name: `twitter:card`,
           content: `summary`,
         },
         {
-          name: `twitter:image`,
-          content: image || "",
-        },
-        {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: "@allenmoris",
         },
         {
           name: `twitter:title`,
@@ -73,30 +90,17 @@ function SEO({ description, lang, meta, title, image, url }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          name: "viewport",
-          content:
-            "width=device-width, initial-scale=1, maximum-scale=5, minimal-ui",
-        },
       ].concat(meta)}
-    />
-  );
+    >
+      <link
+        rel="icon"
+        type="image/png"
+        href={craft.entry.favicon[0].url}
+        sizes="16x16"
+      />
+      {craft.entry.headcode}
+    </Helmet>
+  )
 }
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-  author: "",
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string,
-  url: PropTypes.string,
-};
-
-export default SEO;
+export default SEO

@@ -1,0 +1,137 @@
+.lease-now-3-heading {
+  font-family: "Overpass";
+  font-size: 50px;
+  text-align: center;
+  color: #443635;
+  font-weight: bold;
+  margin-bottom: 45px;
+  margin-top: 200px;
+}
+
+.lease-now-3-content {
+  margin: 0 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lease-now-3-button {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #231f20;
+  color: #231f20;
+  text-transform: uppercase;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 20px;
+  margin-top: 0px;
+  letter-spacing: 4px;
+  width: 400px;
+}
+
+.lease-now-3-button:hover {
+  color: #946a4d;
+  background-color: white;
+  opacity: 0.6;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.lease-now-3-button.active {
+  color: white;
+  background-color: #946a4d;
+  border: 1px solid #946a4d;
+}
+
+.lease-now-3-footer {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.lease-now-3-result {
+  font-size: 16px;
+  font-family: "Overpass";
+  color: #636569;
+  margin-bottom: 28px;
+  margin-top: 20px;
+}
+
+.lease-now-3-plan {
+  font-size: 20px;
+  font-family: "Overpass";
+  color: #636569;
+}
+
+.lease-now-3-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 77px;
+  margin-right: 77px;
+}
+
+.lease-now-3-back {
+  color: #636569;
+  cursor: pointer;
+}
+
+.lease-now-3-next {
+  color: #636569;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.lease-now-3-bottom-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.lease-now-3-bottom-half:first-child {
+  padding-right: 20px;
+}
+
+.lease-now-3-bottom-half:last-child {
+  padding-left: 20px;
+  border-left: 1px solid #636569;
+}
+
+.lease-now-3-view-result {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #946a4d;
+  text-transform: uppercase;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.lease-now-3-view-result:hover {
+  text-decoration: underline;
+  color: #946a4d;
+}
+
+.lease-now-3-start-over {
+  margin-left: auto;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #946a4d;
+  text-transform: uppercase;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.lease-now-3-start-over:hover {
+  text-decoration: underline;
+  color: #946a4d;
+}
+/*# sourceMappingURL=styles.css.map */

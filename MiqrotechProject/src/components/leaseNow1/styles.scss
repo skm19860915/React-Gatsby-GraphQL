@@ -1,0 +1,124 @@
+.lease-now-1 {
+  &-label {
+    height: 35px;
+    background: url('../../assets/img/logo_brown.png') no-repeat center;
+    background-size: contain;
+    margin-top: 140px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &-heading {
+    margin-top: 140px;
+    font-family: "Overpass";
+    font-size: 50px;
+    text-align: center;
+    font-size: 32px;
+    color: #443635;
+    font-weight: bold;
+    margin-bottom: 45px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      margin-top: 100px;
+      width: 220px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &-button {
+    cursor: pointer;
+    background-color: #946a4d;
+    border: 2px solid #946a4d;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+
+    &:hover {
+      color: #946a4d;
+      background-color: white;
+      opacity: 0.6;
+      transition: all 200ms ease-in-out;
+      text-decoration: none;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 30px;
+      margin-top: 0;
+
+      @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 240px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 12px;
+      height: 50px;
+      line-height: 50px;
+      width: 220px;
+    }
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 55px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &-result {
+    font-size: 16px;
+    font-family: "Overpass";
+    color: #636569;
+    margin-bottom: 28px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-view-result {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #946a4d;
+    text-transform: uppercase;
+    font-family: 'Noto Sans KR';
+
+    &:hover {
+      text-decoration: none;
+      color: #946a4d;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+    }
+
+  }
+}

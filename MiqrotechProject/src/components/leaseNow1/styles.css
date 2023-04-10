@@ -1,0 +1,61 @@
+.lease-now-1-heading {
+  font-family: "Overpass";
+  font-size: 50px;
+  text-align: center;
+  font-size: 32px;
+  color: #443635;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.lease-now-1-button {
+  cursor: pointer;
+  background-color: #946a4d;
+  border: 2px solid #946a4d;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.lease-now-1-button:hover {
+  color: #946a4d;
+  background-color: white;
+  opacity: 0.6;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.lease-now-1-button:nth-child(2n) {
+  margin-left: 30px;
+}
+
+.lease-now-1-footer {
+  position: absolute;
+  bottom: 105px;
+  width: 100%;
+  text-align: center;
+}
+
+.lease-now-1-result {
+  font-size: 16px;
+  font-family: "Overpass";
+  color: #636569;
+  margin-bottom: 28px;
+}
+
+.lease-now-1-view-result {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #946a4d;
+  text-transform: uppercase;
+}
+
+.lease-now-1-view-result:hover {
+  text-decoration: none;
+  color: #946a4d;
+}
+/*# sourceMappingURL=styles.css.map */

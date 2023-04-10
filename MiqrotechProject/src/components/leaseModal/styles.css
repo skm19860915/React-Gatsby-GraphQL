@@ -1,0 +1,30 @@
+.lease-modal {
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#9ea1a7), color-stop(0%, #ffffff00), to(#ffffff)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #9ea1a7 0%, #ffffff00 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: #443635;
+  font-family: "Overpass";
+}
+
+@media screen and (max-width: 1024px) {
+  .lease-modal {
+    width: 100%;
+  }
+}
+
+.lease-modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 35px 45px 60px 45px;
+}
+
+.lease-modal-logo {
+  margin-right: auto;
+}
+
+.lease-modal-close {
+  margin-left: auto;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

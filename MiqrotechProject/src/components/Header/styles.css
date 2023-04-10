@@ -1,0 +1,100 @@
+.header {
+  background-color: #443635;
+  height: 142px;
+  color: white;
+  padding: 51px 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .header {
+    height: 84px;
+    padding: 22px 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 100px;
+    padding: 53px 21px 21px 21px;
+  }
+}
+
+.header .logo {
+  margin-right: auto;
+  background: url("../../assets/img/logo_white.png") no-repeat;
+  background-size: contain;
+  width: 280px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .header .logo {
+    height: 25px;
+    width: 150px;
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-number {
+    display: none;
+  }
+}
+
+.header .right-section {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Overpass";
+  font-size: 10px;
+  line-height: 40px;
+}
+
+.header .right-section>* {
+  margin-left: 42px;
+}
+
+.header .right-section .lease-button {
+  padding: 7px 70px;
+  font-size: 10px;
+  line-height: 25px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.header .right-section .lease-button:hover {
+  color: #443635;
+  opacity: 0.8;
+  background-color: white;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .header .right-section .lease-button {
+    display: none;
+  }
+}
+
+.header .right-section .hamburger-button {
+  cursor: pointer;
+}
+
+.header .right-section .hamburger-button:hover svg {
+  color: #443635;
+}
+
+@media screen and (max-width: 767px) {
+  .header .right-section .hamburger-button {
+    margin-top: -8px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,53 @@
+.success-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+        .success-view-icon {
+            height: 200px;
+            width: 200px;
+            background: url("../../../assets/img/check.png") no-repeat center;
+            background-size: contain;
+            margin-bottom: 10px;
+        }
+        .success-view-time {
+            font-family: "Overpass";
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #443635;
+            text-transform: uppercase;
+        }
+        @media screen and (max-width: 767px) {
+            // margin-top: 70px;
+        }
+    }
+    &-heading {
+        font-family: "Overpass";
+        font-size: 50px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #443635;
+        margin: 10px 0;
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+    }
+    &-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+}

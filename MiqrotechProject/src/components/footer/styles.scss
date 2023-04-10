@@ -1,0 +1,275 @@
+.footer {
+    font-family: 'Overpass';
+    background-color: white;
+    @media screen and (max-width: 1024px) {
+        margin-top: -1px;
+    }
+    &-top {
+        padding: 113px 7% 0 7%;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            padding: 86px 20% 0 20%;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 113px 0 0 0;
+        }
+    }
+    &-logo {
+        background: url('../../assets/img/logo_brown.png') no-repeat center;
+        background-size: contain;
+        height: 50px;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            background: url('../../assets/img/logo_brown.png') no-repeat center;
+            background-size: contain;
+            height: 50px;
+        }
+        @media screen and (max-width: 767px) {
+            background: url('../../assets/img/logo_brown_mobile.png') no-repeat center;
+            background-size: contain;
+            height: 90px;
+        }
+    }
+    &-content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 155px;
+        margin-bottom: 200px;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            margin-bottom: 100px;
+            justify-content: initial;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 135px;
+            display: grid;
+            margin-bottom: 112px;
+        }
+        &-item {
+            font-size: 16px;
+            font-family: "Overpass";
+            letter-spacing: 4px;
+            color: #443635;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px;
+            padding: 0;
+            transition: all .3s ease;
+            &:nth-child(2n) {
+                @media screen and (max-width: 1024px) and (min-width: 768px) {
+                    padding-left: 50px;
+                }
+            }
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                font-size: 14px;
+                margin: 0 0 30px 0;
+                width: 50%;
+                text-align: left;
+            }
+            @media screen and (max-width: 767px) {
+                margin-top: 0;
+                margin-bottom: 47px;
+                padding: 0;
+                font-size: 14px;
+            }
+            &:hover {
+                text-decoration: none;
+                color: #946a4d;
+                cursor: pointer;
+            }
+        }
+    }
+    &-info {
+        display: flex;
+        background: url('../../assets/img/star_brown.png') no-repeat center bottom;
+        background-size: 17%;
+        padding-bottom: 85px;
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            display: flex;
+            background: url('../../assets/img/star_brown.png') no-repeat center bottom;
+            background-size: 200px 100px;
+            display: block;
+            padding-bottom: 215px;
+        }
+        @media screen and (max-width: 767px) {
+            display: flex;
+            background: url('../../assets/img/star_brown.png') no-repeat center bottom;
+            background-size: 120px 60px;
+            display: block;
+            padding-bottom: 114px;
+        }
+        &-1 {
+            display: flex;
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+        }
+    }
+    &-getintouch {
+        text-align: left;
+        color: #636569;
+        font-size: 12px;
+        a {
+            color: #636569;
+            text-decoration: none;
+            &:hover {
+                color: #636569;
+            }
+        }
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            width: 100%;
+        }
+        &-heading {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+    &-socials {
+        display: flex;
+        @media screen and (max-width: 767px) {
+            width: 90px;
+            justify-content: space-between;
+            margin-top: 22px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &>* {
+            margin-left: 60px;
+            padding-top: 60px;
+            @media screen and (max-width: 767px) {
+                padding: 0;
+                margin: 0;
+            }
+        }
+        &>*:first-child {
+            margin-left: 90px;
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                margin-left: 50px;
+            }
+            @media screen and (max-width: 767px) {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    &-subscribe {
+        margin: 0;
+        margin-left: auto;
+        font-family: "Overpass";
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            margin-top: 60px;
+        }
+        @media screen and (max-width: 767px) {
+            display: block;
+            margin-top: 98px;
+        }
+        &-label {
+            font-size: 16px;
+            color: #636569;
+            font-weight: bold;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+            text-align: left;
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
+        }
+        &-container {
+            display: flex;
+            height: 54px;
+            @media screen and (max-width: 767px) {
+                justify-content: center;
+                height: 40px;
+            }
+        }
+        &-input {
+            background-color: #EFEFEF;
+            width: 275px;
+            padding: 11px 25px;
+            @media screen and (max-width: 1024px) and (min-width: 768px) {
+                width: 375px;
+            }
+            @media screen and (max-width: 767px) {
+                width: 175px;
+                padding: 7px 15px;
+            }
+            input {
+                font-size: 16px;
+                color: #A0A1A4;
+                outline: none;
+                border: none;
+                background: transparent;
+                line-height: 30px;
+                @media screen and (max-width: 767px) {
+                    font-size: 10px;
+                }
+            }
+        }
+        &-button {
+            width: 175px;
+            background-color: #946A4D;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 16px;
+            padding: 16px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 24px;
+            @media screen and (max-width: 767px) {
+                width: 125px;
+                font-size: 10px;
+                padding: 12px 15px;
+            }
+        }
+    }
+    &-bottom {
+        background-color: #443635;
+        padding: 30px 7%;
+        font-family: 'Overpass';
+        font-size: 12px;
+        color: white;
+        display: flex;
+        text-align: left;
+        @media screen and (max-width: 767px) {
+            display: block;
+            font-size: 8px;
+            text-align: center;
+        }
+        &-1 {
+            display: flex;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+    &-link {
+        color: white;
+        margin-left: 65px;
+        @media screen and (max-width: 767px) {
+            padding-left: 15px;
+            margin-left: 15px;
+            border-left: 1px solid white;
+        }
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+        &:first-child {
+            margin-left: 0;
+            @media screen and (max-width: 767px) {
+                border-left: none;
+            }
+        }
+    }
+    &-copyright {
+        margin-left: auto;
+    }
+}
