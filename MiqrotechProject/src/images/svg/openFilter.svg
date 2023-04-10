@@ -1,0 +1,7 @@
+<svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect class="filter_ham" y="4.80078" width="24" height="1.6" fill="#050505"/>
+<rect class="filter_ham" x="3.19995" y="11.1992" width="17.6" height="1.6" fill="#050505"/>
+<rect class="filter_ham" x="7.19995" y="17.5996" width="9.6" height="1.6" fill="#050505"/>
+<rect class="filter_x" x="6.13147" y="5" width="17.6" height="1.6" transform="rotate(45 6.13147 5)" fill="#050505"/>
+<rect class="filter_x" x="5" y="17.4453" width="17.6" height="1.6" transform="rotate(-45 5 17.4453)" fill="#050505"/>
+</svg>

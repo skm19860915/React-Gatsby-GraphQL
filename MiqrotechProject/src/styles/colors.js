@@ -1,0 +1,26 @@
+const colors = {
+  jetBlack100: "#171717",
+  jetBlack80: "#2C2C2C",
+  jetBlack60: "#3D3D3D",
+  jetBlack40: "#474747",
+  jetBlack20: "#525252",
+  culturedWhite100: "#F8F8F8",
+  culturedWhite80: "#F5F5F5",
+  culturedWhite60: "#EBEBEB",
+  culturedWhite40: "#E0E0E0",
+  culturedWhite20: "#D6D6D6",
+  keppel100: "#03BCAA",
+  keppel80: "#35C9BB",
+  keppel60: "#68D7CC",
+  keppel40: "#9AE4DD",
+  keppel20: "#CDF2EE",
+  darkOrange100: "#FF8800",
+  darkOrange80: "#FFA033",
+  darkOrange60: "#FFB866",
+  darkOrange40: "#FFCF99",
+  darkOrange20: "#FFE7CC",
+  black: "#050505",
+  white: "#FEFEFE",
+};
+
+export default colors

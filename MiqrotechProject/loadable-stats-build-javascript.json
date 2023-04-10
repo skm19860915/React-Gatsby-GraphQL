@@ -1,0 +1,738 @@
+{
+  "hash": "c7bcde75182b5fbb05cb",
+  "publicPath": "/",
+  "outputPath": "C:\\Users\\dalle\\Desktop\\Public%20Website",
+  "assetsByChunkName": {
+    "polyfill": [
+      "polyfill.js"
+    ],
+    "commons": [
+      "commons.css",
+      "commons.js"
+    ],
+    "component---cache-dev-404-page-js": [
+      "component---cache-dev-404-page-js.js"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js.js"
+    ],
+    "component---src-pages-about-tsx": [
+      "component---src-pages-about-tsx.js"
+    ],
+    "component---src-pages-blog-tsx": [
+      "component---src-pages-blog-tsx.js"
+    ],
+    "component---src-pages-future-innovations-tsx": [
+      "component---src-pages-future-innovations-tsx.js"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js.js"
+    ],
+    "component---src-pages-miqroaware-tsx": [
+      "component---src-pages-miqroaware-tsx.js"
+    ],
+    "component---src-pages-privacy-policy-tsx": [
+      "component---src-pages-privacy-policy-tsx.js"
+    ],
+    "component---src-pages-terms-of-use-tsx": [
+      "component---src-pages-terms-of-use-tsx.js"
+    ],
+    "component---src-templates-blog-page-tsx": [
+      "component---src-templates-blog-page-tsx.js"
+    ],
+    "component---src-templates-executive-page-tsx": [
+      "component---src-templates-executive-page-tsx.js"
+    ],
+    "sections-about-Executives": [
+      "sections-about-Executives.js"
+    ],
+    "sections-about-Directors": [
+      "sections-about-Directors.js"
+    ],
+    "sections-about-Team": [
+      "sections-about-Team.js"
+    ],
+    "sections-about-StandFor": [
+      "sections-about-StandFor.js"
+    ],
+    "sections-about-Values": [
+      "sections-about-Values.js"
+    ],
+    "sections-about-Locations": [
+      "sections-about-Locations.js"
+    ],
+    "sections-about-PartnerCTA": [
+      "sections-about-PartnerCTA.js"
+    ],
+    "sections-home-Causes": [
+      "sections-home-Causes.js"
+    ],
+    "sections-home-Discover": [
+      "sections-home-Discover.js"
+    ],
+    "sections-home-Challenging": [
+      "sections-home-Challenging.js"
+    ],
+    "sections-home-PartnerCTA": [
+      "sections-home-PartnerCTA.js"
+    ],
+    "sections-home-TrustedPartners": [
+      "sections-home-TrustedPartners.js"
+    ],
+    "sections-home-ReadMore": [
+      "sections-home-ReadMore.js"
+    ],
+    "framework": [
+      "framework.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "assets by status",
+      "cached": true,
+      "filteredChildren": 132,
+      "size": 83992226
+    }
+  ],
+  "namedChunkGroups": {
+    "polyfill": {
+      "name": "polyfill",
+      "chunks": [
+        "polyfill"
+      ],
+      "assets": [
+        {
+          "name": "polyfill.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "commons": {
+      "name": "commons",
+      "chunks": [
+        "framework",
+        "commons"
+      ],
+      "assets": [
+        {
+          "name": "framework.js"
+        },
+        {
+          "name": "commons.css"
+        },
+        {
+          "name": "commons.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---cache-dev-404-page-js": {
+      "name": "component---cache-dev-404-page-js",
+      "chunks": [
+        "component---cache-dev-404-page-js"
+      ],
+      "assets": [
+        {
+          "name": "component---cache-dev-404-page-js.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-404-js": {
+      "name": "component---src-pages-404-js",
+      "chunks": [
+        "component---src-pages-404-js"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-404-js.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-about-tsx": {
+      "name": "component---src-pages-about-tsx",
+      "chunks": [
+        "component---src-pages-about-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-about-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-blog-tsx": {
+      "name": "component---src-pages-blog-tsx",
+      "chunks": [
+        "component---src-pages-blog-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-blog-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 4,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-future-innovations-tsx": {
+      "name": "component---src-pages-future-innovations-tsx",
+      "chunks": [
+        "component---src-pages-future-innovations-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-future-innovations-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-index-js": {
+      "name": "component---src-pages-index-js",
+      "chunks": [
+        "component---src-pages-index-js"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-index-js.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-miqroaware-tsx": {
+      "name": "component---src-pages-miqroaware-tsx",
+      "chunks": [
+        "component---src-pages-miqroaware-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-miqroaware-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 73,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-privacy-policy-tsx": {
+      "name": "component---src-pages-privacy-policy-tsx",
+      "chunks": [
+        "component---src-pages-privacy-policy-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-privacy-policy-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-terms-of-use-tsx": {
+      "name": "component---src-pages-terms-of-use-tsx",
+      "chunks": [
+        "component---src-pages-terms-of-use-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-pages-terms-of-use-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-templates-blog-page-tsx": {
+      "name": "component---src-templates-blog-page-tsx",
+      "chunks": [
+        "component---src-templates-blog-page-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-templates-blog-page-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 4,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-templates-executive-page-tsx": {
+      "name": "component---src-templates-executive-page-tsx",
+      "chunks": [
+        "component---src-templates-executive-page-tsx"
+      ],
+      "assets": [
+        {
+          "name": "component---src-templates-executive-page-tsx.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-Executives": {
+      "name": "sections-about-Executives",
+      "chunks": [
+        "sections-about-Executives"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-Executives.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-Directors": {
+      "name": "sections-about-Directors",
+      "chunks": [
+        "sections-about-Directors"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-Directors.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-Team": {
+      "name": "sections-about-Team",
+      "chunks": [
+        "sections-about-Team"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-Team.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-StandFor": {
+      "name": "sections-about-StandFor",
+      "chunks": [
+        "sections-about-StandFor"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-StandFor.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-Values": {
+      "name": "sections-about-Values",
+      "chunks": [
+        "sections-about-Values"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-Values.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-Locations": {
+      "name": "sections-about-Locations",
+      "chunks": [
+        "sections-about-Locations"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-Locations.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-about-PartnerCTA": {
+      "name": "sections-about-PartnerCTA",
+      "chunks": [
+        "sections-about-PartnerCTA"
+      ],
+      "assets": [
+        {
+          "name": "sections-about-PartnerCTA.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-home-Causes": {
+      "name": "sections-home-Causes",
+      "chunks": [
+        "sections-home-Causes"
+      ],
+      "assets": [
+        {
+          "name": "sections-home-Causes.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 6,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-home-Discover": {
+      "name": "sections-home-Discover",
+      "chunks": [
+        "sections-home-Discover"
+      ],
+      "assets": [
+        {
+          "name": "sections-home-Discover.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-home-Challenging": {
+      "name": "sections-home-Challenging",
+      "chunks": [
+        "sections-home-Challenging"
+      ],
+      "assets": [
+        {
+          "name": "sections-home-Challenging.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-home-PartnerCTA": {
+      "name": "sections-home-PartnerCTA",
+      "chunks": [
+        "sections-home-PartnerCTA"
+      ],
+      "assets": [
+        {
+          "name": "sections-home-PartnerCTA.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-home-TrustedPartners": {
+      "name": "sections-home-TrustedPartners",
+      "chunks": [
+        "sections-home-TrustedPartners"
+      ],
+      "assets": [
+        {
+          "name": "sections-home-TrustedPartners.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "sections-home-ReadMore": {
+      "name": "sections-home-ReadMore",
+      "chunks": [
+        "sections-home-ReadMore"
+      ],
+      "assets": [
+        {
+          "name": "sections-home-ReadMore.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "polyfill",
+      "files": [
+        "polyfill.js"
+      ]
+    },
+    {
+      "id": "commons",
+      "files": [
+        "commons.css",
+        "commons.js"
+      ]
+    },
+    {
+      "id": "_cache_dummy_js",
+      "files": [
+        "_cache_dummy_js.js"
+      ]
+    },
+    {
+      "id": "node_modules_objectFitPolyfill_dist_objectFitPolyfill_min_js",
+      "files": [
+        "node_modules_objectFitPolyfill_dist_objectFitPolyfill_min_js.js"
+      ]
+    },
+    {
+      "id": "node_modules_gatsby-plugin-image_dist_lazy-hydrate-6a6da979_js",
+      "files": [
+        "node_modules_gatsby-plugin-image_dist_lazy-hydrate-6a6da979_js.js"
+      ]
+    },
+    {
+      "id": "node_modules_gatsby-plugin-image_dist_intersection-observer-6b794dd8_js",
+      "files": [
+        "node_modules_gatsby-plugin-image_dist_intersection-observer-6b794dd8_js.js"
+      ]
+    },
+    {
+      "id": "component---cache-dev-404-page-js",
+      "files": [
+        "component---cache-dev-404-page-js.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-404-js",
+      "files": [
+        "component---src-pages-404-js.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-about-tsx",
+      "files": [
+        "component---src-pages-about-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-blog-tsx",
+      "files": [
+        "component---src-pages-blog-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-future-innovations-tsx",
+      "files": [
+        "component---src-pages-future-innovations-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-index-js",
+      "files": [
+        "component---src-pages-index-js.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-miqroaware-tsx",
+      "files": [
+        "component---src-pages-miqroaware-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-privacy-policy-tsx",
+      "files": [
+        "component---src-pages-privacy-policy-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-pages-terms-of-use-tsx",
+      "files": [
+        "component---src-pages-terms-of-use-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-templates-blog-page-tsx",
+      "files": [
+        "component---src-templates-blog-page-tsx.js"
+      ]
+    },
+    {
+      "id": "component---src-templates-executive-page-tsx",
+      "files": [
+        "component---src-templates-executive-page-tsx.js"
+      ]
+    },
+    {
+      "id": "sections-about-Executives",
+      "files": [
+        "sections-about-Executives.js"
+      ]
+    },
+    {
+      "id": "sections-about-Directors",
+      "files": [
+        "sections-about-Directors.js"
+      ]
+    },
+    {
+      "id": "sections-about-Team",
+      "files": [
+        "sections-about-Team.js"
+      ]
+    },
+    {
+      "id": "sections-about-StandFor",
+      "files": [
+        "sections-about-StandFor.js"
+      ]
+    },
+    {
+      "id": "sections-about-Values",
+      "files": [
+        "sections-about-Values.js"
+      ]
+    },
+    {
+      "id": "sections-about-Locations",
+      "files": [
+        "sections-about-Locations.js"
+      ]
+    },
+    {
+      "id": "sections-about-PartnerCTA",
+      "files": [
+        "sections-about-PartnerCTA.js"
+      ]
+    },
+    {
+      "id": "sections-home-Causes",
+      "files": [
+        "sections-home-Causes.js"
+      ]
+    },
+    {
+      "id": "sections-home-Discover",
+      "files": [
+        "sections-home-Discover.js"
+      ]
+    },
+    {
+      "id": "sections-home-Challenging",
+      "files": [
+        "sections-home-Challenging.js"
+      ]
+    },
+    {
+      "id": "sections-home-PartnerCTA",
+      "files": [
+        "sections-home-PartnerCTA.js"
+      ]
+    },
+    {
+      "id": "sections-home-TrustedPartners",
+      "files": [
+        "sections-home-TrustedPartners.js"
+      ]
+    },
+    {
+      "id": "sections-home-ReadMore",
+      "files": [
+        "sections-home-ReadMore.js"
+      ]
+    },
+    {
+      "id": "framework",
+      "files": [
+        "framework.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g className="arrow">
+    <path d="M20 4H28V12" stroke="#F8F8F8" stroke-width="1.33333"/>
+    <path d="M12 28H4V20" stroke="#F8F8F8" stroke-width="1.33333"/>
+  </g>
+  <g className="arrow">
+    <path d="M27.666 4L18.666 13" stroke="#F8F8F8" stroke-width="1.33333"/>
+    <path d="M4 27.6667L13 18.6667" stroke="#F8F8F8" stroke-width="1.33333"/>
+  </g>
+</svg>
